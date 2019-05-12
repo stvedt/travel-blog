@@ -16,7 +16,7 @@ const IndexPage = ({data}) => {
         const { frontmatter } = edge.node;
         return (
           <div key={frontmatter.path}>
-            <h2>{frontmatter.title}</h2>
+            <Link to={frontmatter.path}>{frontmatter.title}</Link>
           </div>
         )
       })}
