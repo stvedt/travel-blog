@@ -8,7 +8,7 @@ const AllTagsTemplate = ({data, pageContext}) => {
       {tags.map((tagName, index) => {
         return (
           <li key={index}>
-            <Link to={`${tagName}`}>{tagName}</Link>
+            <Link to={`tags/${tagName}`}>{tagName}</Link>
           </li>
         )
       })}
